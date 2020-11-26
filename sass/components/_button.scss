@@ -3,11 +3,11 @@
     &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4.0rem;
+    padding: 2.5rem 4.0rem;
     display: inline-block;
     border-radius: .3rem;
     transition: all .2s;
-    margin-top: 5rem;
+    margin: 4rem 1rem 2rem 1rem;
     font-size: $default-font-size;
     }
     &:hover{
@@ -28,7 +28,7 @@
        }
 
        @include respond(tab-port){
-           margin-left: 27.5%;
+        margin: 4rem 1rem 2rem 12rem;
        }
 }
 
@@ -69,3 +69,42 @@
     }
 }
 
+.btn--card {
+
+    &:link,
+    &:visited {
+    text-transform: uppercase;
+    color:$color-primary;
+    text-decoration: none;
+    padding: 2.5rem 4.0rem;
+    display: inline-block;
+    border-radius: .3rem;
+    transition: all .2s;
+    margin: 4rem 0 4rem 2rem;
+    background-color: $color-white;
+    font-size: $default-font-size;
+
+    @include respond(tab-port){
+        margin: 4rem 3rem 4rem 13rem;
+       }
+    }
+    &:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    }
+    &:active{
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+    &--white{
+        background-color: $color-white;
+        color: $color-primary;
+            opacity: .9;
+    }
+    &--animated{
+        animation: moveInBottom 1.5s ease-out;
+       }
+
+      
+
+}

@@ -22,8 +22,8 @@
         }
 
         @include respond(phone) {
-            top:3rem;
-            right: 6rem;
+            top:2rem;
+            right:11rem;
         }
     }
 
@@ -44,8 +44,8 @@
         }
         
         @include respond(phone) {
-            top:3rem;
-            right: 6.5rem;
+            top:2.5rem;
+            right: 11rem;
         }
     }
 

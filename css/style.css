@@ -38,7 +38,7 @@ body {
   padding: 3rem; }
   @media only screen and (max-width: 56.25em) {
     body {
-      padding: 1rem 0 0 3rem;
+      padding: 0;
       margin: 0; } }
 
 @keyframes moveInTop {
@@ -162,11 +162,11 @@ body {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4.0rem;
+  padding: 2.5rem 4.0rem;
   display: inline-block;
   border-radius: .3rem;
   transition: all .2s;
-  margin-top: 5rem;
+  margin: 4rem 1rem 2rem 1rem;
   font-size: 1.6rem; }
 
 .btn:hover {
@@ -187,7 +187,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .btn {
-    margin-left: 27.5%; } }
+    margin: 4rem 1rem 2rem 12rem; } }
 
 .btn-text, .btn-text:link, .btn-text:visited {
   font-size: 2rem;
@@ -214,6 +214,37 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.btn--card:link, .btn--card:visited {
+  text-transform: uppercase;
+  color: #107dac;
+  text-decoration: none;
+  padding: 2.5rem 4.0rem;
+  display: inline-block;
+  border-radius: .3rem;
+  transition: all .2s;
+  margin: 4rem 0 4rem 2rem;
+  background-color: #FFF;
+  font-size: 1.6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .btn--card:link, .btn--card:visited {
+      margin: 4rem 3rem 4rem 13rem; } }
+
+.btn--card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn--card:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--card--white {
+  background-color: #FFF;
+  color: #107dac;
+  opacity: .9; }
+
+.btn--card--animated {
+  animation: moveInBottom 1.5s ease-out; }
 
 .composition {
   position: relative; }
@@ -360,7 +391,7 @@ body {
     clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%); }
   .card__price-box {
     text-align: center;
-    margin: 2rem 10rem 3rem 3rem;
+    margin: 2rem 3rem 3rem 3rem;
     color: #FFF; }
   .card__price-only {
     font-size: 1.8rem;
@@ -392,7 +423,8 @@ body {
         width: 100%;
         padding: 2rem 4rem 4rem 4rem; }
       .card__price-box {
-        margin-bottom: 3rem; }
+        margin-bottom: 3rem;
+        margin-right: 10rem; }
       .card__price-value {
         font-size: 4rem; } }
 
@@ -619,8 +651,8 @@ body {
       right: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__button {
-      top: 3rem;
-      right: 6rem; } }
+      top: 2rem;
+      right: 11rem; } }
 
 .navigation__background {
   height: 5rem;
@@ -638,8 +670,8 @@ body {
       right: 4.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
-      top: 3rem;
-      right: 6.5rem; } }
+      top: 2.5rem;
+      right: 11rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -758,7 +790,7 @@ body {
   background-image: linear-gradient(to right bottom, #71c7ec, #005073); }
   @media only screen and (max-width: 56.25em) {
     .section-ride {
-      padding: 10rem 0; } }
+      padding: 2rem 0; } }
 
 .book {
   background-image: linear-gradient(62deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/ride.jpg);
